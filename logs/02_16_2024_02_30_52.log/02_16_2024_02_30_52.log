@@ -1,0 +1,37 @@
+[2024-02-16 02:30:52,626: INFO: utils: Note: NumExpr detected 20 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-16 02:30:52,626: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-16 02:30:57,697: WARNING: module_wrapper: From C:\ProgramData\Anaconda3\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-02-16 02:30:58,313: INFO: main: >>>>>>>>>> stage Data Ingestion Stage started <<<<<<<<<<]
+[2024-02-16 02:30:58,315: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 02:30:58,316: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 02:30:58,316: INFO: common: Created directory at: artifacts]
+[2024-02-16 02:30:58,317: INFO: common: Created directory at: data]
+[2024-02-16 02:30:58,317: INFO: data_ingestion: Raw data path is - data]
+[2024-02-16 02:30:58,317: INFO: main: >>>>>>>>>> stage Data Ingestion Stage completed <<<<<<<<<<
+
+X==========X]
+[2024-02-16 02:30:58,318: INFO: main: >>>>>>>>>> stage Data Validation stage started <<<<<<<<<<]
+[2024-02-16 02:30:58,319: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 02:30:58,320: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 02:30:58,321: INFO: common: Created directory at: artifacts]
+[2024-02-16 02:30:58,321: INFO: common: Created directory at: artifacts/ data_validation]
+[2024-02-16 02:30:58,322: INFO: main: >>>>>>>>>> stage Data Validation stage completed <<<<<<<<<<
+
+X==========X]
+[2024-02-16 02:30:58,323: INFO: main: >>>>>>>>>> stage Data transformation stage started <<<<<<<<<<]
+[2024-02-16 02:30:58,325: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 02:30:58,326: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 02:30:58,326: INFO: common: Created directory at: artifacts]
+[2024-02-16 02:30:58,327: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-02-16 02:30:58,329: INFO: data_transformation: Loaded text data from ******* Sherlock Holmes.txt ******* succcessfully]
+[2024-02-16 02:30:58,329: ERROR: main: cannot assign to field 'tokenizer_name']
+Traceback (most recent call last):
+  File "C:\Master's In Mechatronics\Practice\NLP\new_successive_word_suggestion\main.py", line 32, in <module>
+    data_transformation.main()
+  File "C:\Master's In Mechatronics\Practice\NLP\new_successive_word_suggestion\src\pipeline\stage_03_data_transformation.py", line 18, in main
+    text_data = data_transformation.get_text_data()
+  File "C:\Master's In Mechatronics\Practice\NLP\new_successive_word_suggestion\src\components\data_transformation.py", line 20, in get_text_data
+    self.config.tokenizer_name = filename
+  File "<string>", line 4, in __setattr__
+dataclasses.FrozenInstanceError: cannot assign to field 'tokenizer_name'

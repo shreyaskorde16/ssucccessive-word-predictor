@@ -1,0 +1,40 @@
+[2024-02-16 02:48:03,335: INFO: utils: Note: NumExpr detected 20 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-16 02:48:03,335: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-16 02:48:08,117: WARNING: module_wrapper: From C:\ProgramData\Anaconda3\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-02-16 02:48:08,739: INFO: main: >>>>>>>>>> stage Data Ingestion Stage started <<<<<<<<<<]
+[2024-02-16 02:48:08,741: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 02:48:08,742: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 02:48:08,744: INFO: common: Created directory at: artifacts]
+[2024-02-16 02:48:08,744: INFO: common: Created directory at: data]
+[2024-02-16 02:48:08,745: INFO: data_ingestion: Raw data path is - data]
+[2024-02-16 02:48:08,745: INFO: main: >>>>>>>>>> stage Data Ingestion Stage completed <<<<<<<<<<
+
+X==========X]
+[2024-02-16 02:48:08,745: INFO: main: >>>>>>>>>> stage Data Validation stage started <<<<<<<<<<]
+[2024-02-16 02:48:08,747: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 02:48:08,747: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 02:48:08,749: INFO: common: Created directory at: artifacts]
+[2024-02-16 02:48:08,749: INFO: common: Created directory at: artifacts/ data_validation]
+[2024-02-16 02:48:08,750: INFO: main: >>>>>>>>>> stage Data Validation stage completed <<<<<<<<<<
+
+X==========X]
+[2024-02-16 02:48:08,751: INFO: main: >>>>>>>>>> stage Data transformation stage started <<<<<<<<<<]
+[2024-02-16 02:48:08,753: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 02:48:08,753: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 02:48:08,754: INFO: common: Created directory at: artifacts]
+[2024-02-16 02:48:08,754: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-02-16 02:48:08,756: INFO: data_transformation: Loaded text data from ******* Sherlock Holmes.txt ******* succcessfully]
+[2024-02-16 02:48:08,757: INFO: data_transformation: Tokenizer name set]
+[2024-02-16 02:48:08,757: INFO: stage_03_data_transformation: Text data imported]
+[2024-02-16 02:48:08,842: INFO: stage_03_data_transformation: Text data tokenize]
+[2024-02-16 02:48:08,842: INFO: stage_03_data_transformation: The text data has 8199 word index.]
+[2024-02-16 02:48:08,851: INFO: stage_03_data_transformation: Text data has been splited]
+[2024-02-16 02:48:08,853: INFO: stage_03_data_transformation: path artifacts/data_ingestion/dataset/Sherlock Holmes.txt\Sherlock Holmes.txt]
+[2024-02-16 02:48:08,855: ERROR: main: file must have a 'write' attribute]
+Traceback (most recent call last):
+  File "C:\Master's In Mechatronics\Practice\NLP\new_successive_word_suggestion\main.py", line 32, in <module>
+    data_transformation.main()
+  File "C:\Master's In Mechatronics\Practice\NLP\new_successive_word_suggestion\src\pipeline\stage_03_data_transformation.py", line 35, in main
+    pickle.dump(self.tokenizer, open)
+TypeError: file must have a 'write' attribute

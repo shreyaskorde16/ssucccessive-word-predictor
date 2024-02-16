@@ -1,0 +1,17 @@
+[2024-02-16 01:40:08,206: INFO: main: >>>>>>>>>> stage Data Ingestion Stage started <<<<<<<<<<]
+[2024-02-16 01:40:08,206: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 01:40:08,206: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 01:40:08,206: INFO: common: Created directory at: artifacts]
+[2024-02-16 01:40:08,206: INFO: common: Created directory at: data]
+[2024-02-16 01:40:08,206: INFO: data_ingestion: Raw data path is - data]
+[2024-02-16 01:40:08,210: INFO: main: >>>>>>>>>> stage Data Ingestion Stage completed <<<<<<<<<<
+
+X==========X]
+[2024-02-16 01:40:08,210: INFO: main: >>>>>>>>>> stage Data Validation stage started <<<<<<<<<<]
+[2024-02-16 01:40:08,210: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 01:40:08,214: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 01:40:08,214: INFO: common: Created directory at: artifacts]
+[2024-02-16 01:40:08,214: INFO: common: Created directory at: artifacts/ data_validation]
+[2024-02-16 01:40:08,214: INFO: main: >>>>>>>>>> stage Data Validation stage completed <<<<<<<<<<
+
+X==========X]

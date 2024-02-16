@@ -1,0 +1,37 @@
+[2024-02-16 03:06:30,127: INFO: utils: Note: NumExpr detected 20 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-16 03:06:30,127: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-16 03:06:34,673: WARNING: module_wrapper: From C:\ProgramData\Anaconda3\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-02-16 03:06:35,331: INFO: main: >>>>>>>>>> stage Data Ingestion Stage started <<<<<<<<<<]
+[2024-02-16 03:06:35,333: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 03:06:35,334: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 03:06:35,336: INFO: common: Created directory at: artifacts]
+[2024-02-16 03:06:35,336: INFO: common: Created directory at: data]
+[2024-02-16 03:06:35,336: INFO: data_ingestion: Raw data path is - data]
+[2024-02-16 03:06:35,337: INFO: main: >>>>>>>>>> stage Data Ingestion Stage completed <<<<<<<<<<
+
+X==========X]
+[2024-02-16 03:06:35,337: INFO: main: >>>>>>>>>> stage Data Validation stage started <<<<<<<<<<]
+[2024-02-16 03:06:35,339: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 03:06:35,340: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 03:06:35,340: INFO: common: Created directory at: artifacts]
+[2024-02-16 03:06:35,341: INFO: common: Created directory at: artifacts/ data_validation]
+[2024-02-16 03:06:35,342: INFO: main: >>>>>>>>>> stage Data Validation stage completed <<<<<<<<<<
+
+X==========X]
+[2024-02-16 03:06:35,343: INFO: main: >>>>>>>>>> stage Data transformation stage started <<<<<<<<<<]
+[2024-02-16 03:06:35,344: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 03:06:35,345: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 03:06:35,346: INFO: common: Created directory at: artifacts]
+[2024-02-16 03:06:35,346: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-02-16 03:06:35,349: INFO: data_transformation: Loaded text data from ******* Sherlock Holmes.txt ******* succcessfully]
+[2024-02-16 03:06:35,349: INFO: data_transformation: Tokenizer name set]
+[2024-02-16 03:06:35,350: INFO: stage_03_data_transformation: Text data imported]
+[2024-02-16 03:06:35,430: INFO: stage_03_data_transformation: Text data tokenize]
+[2024-02-16 03:06:35,430: INFO: stage_03_data_transformation: The text data has 8199 word index.]
+[2024-02-16 03:06:35,444: INFO: stage_03_data_transformation: Text data has been splited]
+[2024-02-16 03:06:35,444: INFO: stage_03_data_transformation: path artifacts\data_transformation\Sherlock Holmes.pkl]
+[2024-02-16 03:06:35,451: INFO: stage_03_data_transformation: Tokens are saved for Sherlock Holmes]
+[2024-02-16 03:06:35,451: INFO: main: >>>>>>>>>> stage Data transformation stage completed <<<<<<<<<<
+
+X==========X]

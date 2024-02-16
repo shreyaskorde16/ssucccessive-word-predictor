@@ -1,0 +1,8 @@
+pandas
+numpy
+tensorflow
+keras
+nltk
+scikit-learn
+python-box
+ensure

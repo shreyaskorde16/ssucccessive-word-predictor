@@ -1,0 +1,19 @@
+[2024-02-16 01:38:26,909: INFO: main: >>>>>>>>>> stage Data Ingestion Stage started <<<<<<<<<<]
+[2024-02-16 01:38:26,909: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 01:38:26,913: ERROR: main: [Errno 2] No such file or directory: 'params.yaml']
+Traceback (most recent call last):
+  File "C:\Master's In Mechatronics\Practice\NLP\new_successive_word_suggestion\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "C:\Master's In Mechatronics\Practice\NLP\new_successive_word_suggestion\src\pipeline\stage_01_data_ingestion.py", line 17, in main
+    raise e
+  File "C:\Master's In Mechatronics\Practice\NLP\new_successive_word_suggestion\src\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "C:\Master's In Mechatronics\Practice\NLP\new_successive_word_suggestion\src\config\configuration.py", line 11, in __init__
+    self.params = read_yaml(params_filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "C:\Master's In Mechatronics\Practice\NLP\new_successive_word_suggestion\src\utils\common.py", line 29, in read_yaml
+    raise e
+  File "C:\Master's In Mechatronics\Practice\NLP\new_successive_word_suggestion\src\utils\common.py", line 22, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'params.yaml'

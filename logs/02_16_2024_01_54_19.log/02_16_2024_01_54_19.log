@@ -1,0 +1,31 @@
+[2024-02-16 01:54:19,776: INFO: utils: Note: NumExpr detected 20 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-16 01:54:19,776: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-16 01:54:23,973: WARNING: module_wrapper: From C:\ProgramData\Anaconda3\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-02-16 01:54:24,230: INFO: main: >>>>>>>>>> stage Data Ingestion Stage started <<<<<<<<<<]
+[2024-02-16 01:54:24,230: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 01:54:24,230: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 01:54:24,234: INFO: common: Created directory at: artifacts]
+[2024-02-16 01:54:24,234: INFO: common: Created directory at: data]
+[2024-02-16 01:54:24,234: INFO: data_ingestion: Raw data path is - data]
+[2024-02-16 01:54:24,234: INFO: main: >>>>>>>>>> stage Data Ingestion Stage completed <<<<<<<<<<
+
+X==========X]
+[2024-02-16 01:54:24,234: INFO: main: >>>>>>>>>> stage Data Validation stage started <<<<<<<<<<]
+[2024-02-16 01:54:24,238: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 01:54:24,242: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 01:54:24,266: INFO: common: Created directory at: artifacts]
+[2024-02-16 01:54:24,270: INFO: common: Created directory at: artifacts/ data_validation]
+[2024-02-16 01:54:24,270: INFO: main: >>>>>>>>>> stage Data Validation stage completed <<<<<<<<<<
+
+X==========X]
+[2024-02-16 01:54:24,270: INFO: main: >>>>>>>>>> stage Data transformation stage started <<<<<<<<<<]
+[2024-02-16 01:54:24,270: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 01:54:24,274: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 01:54:24,278: INFO: common: Created directory at: artifacts]
+[2024-02-16 01:54:24,282: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-02-16 01:54:24,286: INFO: data_transformation: Loaded text datafor Sherlock Holmes.txt succcessfully]
+[2024-02-16 01:54:24,286: INFO: stage_03_data_transformation: text data imported]
+[2024-02-16 01:54:24,286: INFO: main: >>>>>>>>>> stage Data transformation stage completed <<<<<<<<<<
+
+X==========X]

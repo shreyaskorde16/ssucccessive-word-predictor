@@ -1,0 +1,33 @@
+[2024-02-16 01:44:47,387: INFO: utils: Note: NumExpr detected 20 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-16 01:44:47,391: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-16 01:44:52,109: WARNING: module_wrapper: From C:\ProgramData\Anaconda3\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-02-16 01:44:52,425: INFO: main: >>>>>>>>>> stage Data Ingestion Stage started <<<<<<<<<<]
+[2024-02-16 01:44:52,425: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 01:44:52,429: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 01:44:52,429: INFO: common: Created directory at: artifacts]
+[2024-02-16 01:44:52,429: INFO: common: Created directory at: data]
+[2024-02-16 01:44:52,429: INFO: data_ingestion: Raw data path is - data]
+[2024-02-16 01:44:52,429: INFO: main: >>>>>>>>>> stage Data Ingestion Stage completed <<<<<<<<<<
+
+X==========X]
+[2024-02-16 01:44:52,429: INFO: main: >>>>>>>>>> stage Data Validation stage started <<<<<<<<<<]
+[2024-02-16 01:44:52,433: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 01:44:52,433: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 01:44:52,433: INFO: common: Created directory at: artifacts]
+[2024-02-16 01:44:52,433: INFO: common: Created directory at: artifacts/ data_validation]
+[2024-02-16 01:44:52,433: INFO: main: >>>>>>>>>> stage Data Validation stage completed <<<<<<<<<<
+
+X==========X]
+[2024-02-16 01:44:52,433: INFO: main: >>>>>>>>>> stage Data transformation stage started <<<<<<<<<<]
+[2024-02-16 01:44:52,437: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-16 01:44:52,437: INFO: common: yaml file: config\params.yaml loaded successfully]
+[2024-02-16 01:44:52,437: INFO: common: Created directory at: artifacts]
+[2024-02-16 01:44:52,437: INFO: common: Created directory at: artifacts/data_transformation]
+[2024-02-16 01:44:52,437: ERROR: main: local variable 'data_transformation' referenced before assignment]
+Traceback (most recent call last):
+  File "C:\Master's In Mechatronics\Practice\NLP\new_successive_word_suggestion\main.py", line 32, in <module>
+    data_transformation.main()
+  File "C:\Master's In Mechatronics\Practice\NLP\new_successive_word_suggestion\src\pipeline\stage_03_data_transformation.py", line 14, in main
+    data_transformation = data_transformation(config=data_transformation_config)
+UnboundLocalError: local variable 'data_transformation' referenced before assignment
