@@ -17,6 +17,7 @@ class DataTransformationPipeline:
         self.classes = None
         self.X = None
         self.y = None
+        self.vocab_size = None
         pass
     
     def main(self):
@@ -52,13 +53,13 @@ class DataTransformationPipeline:
                 sent = tokenized_sentence[:i+1]
                 input_sequence.append(sent)
         
-        self.max_input_len =  max([len(x) for x in input_sequence])  
+        self.max_input_len =  max([len(x) for x in input_sequence]) -1   # 
         logger.info(f"The maximum length of Input is {self.max_input_len}")  
-        padded_input_sequence = pad_sequences(input_sequence, maxlen=self.max_input_len, padding='pre')    
+        padded_input_sequence = pad_sequences(input_sequence, maxlen=self.max_input_len+1, padding='pre')    
         logger.info(f"The shape of padded input sequence is {padded_input_sequence.shape}")
         
-        
-        
+        self.vocab_size = self.classes+1
+        logger.info(f"The vocab size is {self.vocab_size}")
         self.X = padded_input_sequence[:,:-1]
         self.y = padded_input_sequence[:,-1]
         self.y = to_categorical(self.y, num_classes=self.classes+1) 
